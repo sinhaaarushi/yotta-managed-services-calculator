@@ -1,0 +1,55 @@
+{
+  "name": "cloud-management-calculator",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Cloud Management Service cost calculator — Phase 1 UI + workbook engine",
+  "type": "module",
+  "main": "./dist/engine/index.js",
+  "types": "./dist/engine/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/engine/index.d.ts",
+      "import": "./dist/engine/index.js"
+    },
+    "./phase1": {
+      "types": "./dist/engine/phase1.d.ts",
+      "import": "./dist/engine/phase1.js"
+    },
+    "./rate-cards": {
+      "types": "./dist/config/rate-cards.d.ts",
+      "import": "./dist/config/rate-cards.js"
+    },
+    "./api": {
+      "types": "./dist/api/createApp.d.ts",
+      "import": "./dist/api/createApp.js"
+    }
+  },
+  "files": [
+    "dist",
+    "public",
+    "docs"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/api/server.js",
+    "dev": "tsx watch src/api/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

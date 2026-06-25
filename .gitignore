@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+workbook-dump.txt
+workbook-formulas.txt
+reference-phase1.html
