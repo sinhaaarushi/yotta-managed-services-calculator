@@ -1,6 +1,6 @@
 # Cloud Management Service Calculator
 
-Production-ready calculator for Yotta managed services pricing. Rebuilds the Phase 1 [CloudAssure calculator](https://sskhan-cloud.github.io/CloudAssure/) with a **Yntraa workbook category breakdown**, plus a full workbook calculation engine for future use.
+Production-ready calculator for managed services pricing. 
 
 ## What's in this repo
 
