@@ -35,6 +35,7 @@
     "dev": "tsx watch src/api/server.ts",
     "test": "vitest run",
     "test:watch": "vitest",
+    "sync:pages": "node scripts/sync-pages.js",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
